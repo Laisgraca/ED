@@ -2,6 +2,7 @@ const grid = document.querySelector('.grid');
 const timer = document.querySelector('.timer');
 const correctCountElement = document.getElementById('correct-count');
 const errorCountElement = document.getElementById('error-count');
+const gameContainer = document.getElementById('game-container');
 
 const characters = [
     { character: '1', pair: 'um' },
@@ -138,6 +139,7 @@ document.getElementById('restart-button').onclick = () => {
 };
 
 document.getElementById('close-button').onclick = () => {
-    window.close();
+    document.getElementById('popup').classList.add('hidden');
+    gameContainer.innerHTML='<img src="../logo.jpeg"> </img>';
 };
 

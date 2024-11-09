@@ -10,6 +10,7 @@ document.addEventListener('DOMContentLoaded', () => {
     const finalErrorCountElement = document.getElementById('final-error-count');
     const restartButton = document.getElementById('restart-button');
     const closeButton = document.getElementById('close-button');
+    const gameContainer = document.getElementById('game-container');
 
     const words = [
         { audio: 'audio/gato.mp3', correct: 'PATO', options: ['PATO', 'BOLA', 'ASA'], images: ['imagens/pato.png', 'imagens/bola.png', 'imagens/asa.png'] },
@@ -161,7 +162,8 @@ document.addEventListener('DOMContentLoaded', () => {
     };
 
     closeButton.onclick = () => {
-        window.close();
+        popupElement.classList.add('hidden');
+        gameContainer.innerHTML='<img src="../logo.jpeg"> </img>';
     };
 
     shuffle(words); // Embaralhar as palavras inicialmente

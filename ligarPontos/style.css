@@ -45,7 +45,7 @@ h1 {
 
 .letter, .image {
     padding: 20px;
-    background: rgba(100, 100, 255, 0.3); /*ajuste da opacidade*/
+    background: rgba(100, 100, 255, 0.5); /*ajuste da opacidade*/
     color: white;
     border: none;
     border-radius: 10px;
@@ -55,7 +55,7 @@ h1 {
 }
 
 .letter:hover, .image:hover {
-    background: rgba(200, 100, 255, 0.3); /*ajuste da opacidade*/
+    background: rgba(200, 100, 255, 0.5); /*ajuste da opacidade*/
     transform: scale(1.1);
 }
 

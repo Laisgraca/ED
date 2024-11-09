@@ -9,6 +9,7 @@ document.addEventListener('DOMContentLoaded', () => {
     const timeSpentElement = document.getElementById('time-spent');
     const restartButton = document.getElementById('restart-button');
     const closeButton = document.getElementById('close-button');
+    const gameContainer = document.getElementById('game-container');
 
     const words = {
         'A': 'Abelha',
@@ -152,7 +153,8 @@ document.addEventListener('DOMContentLoaded', () => {
     });
 
     closeButton.addEventListener('click', () => {
-        window.close();
+        popupElement.classList.add('hidden');
+        gameContainer.innerHTML='<img src="../logo.jpeg"> </img>';
     });
 
     loadRound();
