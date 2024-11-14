@@ -2,7 +2,6 @@ const grid = document.querySelector('.grid');
 const timer = document.querySelector('.timer');
 const correctCountElement = document.getElementById('correct-count');
 const errorCountElement = document.getElementById('error-count');
-const gameContainer = document.getElementById('game-container');
 
 const characters = [
     { character: '1', pair: 'um' },
@@ -100,7 +99,7 @@ const createCard = (character) => {
     const front = createElement('div', 'face front');
     const back = createElement('div', 'face back');
 
-    front.style.backgroundImage = `url('imagens/${character}.png')`;
+    front.style.backgroundImage = `url('../static/image/memoria/${character}.png')`;
 
     card.appendChild(front);
     card.appendChild(back);
@@ -138,8 +137,4 @@ document.getElementById('restart-button').onclick = () => {
     location.reload();
 };
 
-document.getElementById('close-button').onclick = () => {
-    document.getElementById('popup').classList.add('hidden');
-    gameContainer.innerHTML='<img src="../logo.jpeg"> </img>';
-};
 

@@ -1,6 +1,6 @@
 body {
   font-family: 'Comic Sans MS', cursive, sans-serif;
-  background: url('imagens/fundo10.jpg') no-repeat center center fixed;
+  background: url('../fundo10.jpg') no-repeat center center fixed;
   background-size: cover;
   display: flex;
   justify-content: center;
@@ -13,10 +13,10 @@ body {
 .game-container {
   text-align: center;
   background: rgba(255, 255, 255, 0.1); /*ajuste da opacidade*/
+  width: 1000px;
   padding: 20px;
   border-radius: 20px;
   box-shadow: 0 0 15px rgba(0, 0, 0, 0.2);
-  width: 80%;
 }
 
 h1 {
@@ -78,7 +78,7 @@ header {
 }
 
 .back {
-  background-image: url('imagens/back.png');
+  background-image: url('../image/memoria/back.png');
   backface-visibility: hidden;
 }
 
@@ -137,4 +137,38 @@ header {
 
 .hidden {
   display: none;
+}
+
+#content {
+  display: flex;
+  flex-grow: 1;
+}
+
+#menu {
+  width: 200px;
+  background: url('../fundo10.jpg') no-repeat center center fixed;
+  background-size: cover;
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.menu-button {
+  width: 200px;
+  height: 80px;
+  margin: 10px 0;
+  opacity: 2;
+  padding: 15px;
+  font-size: 18px;
+  border: none;
+  border-radius: 10px;
+  background-color: #FF6347;
+  color: white;
+  cursor: pointer;
+  transition: transform 0.3s ease;
+}
+
+.menu-button:hover {
+  transform: scale(1.1);
 }

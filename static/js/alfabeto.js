@@ -8,8 +8,7 @@ document.addEventListener('DOMContentLoaded', () => {
     const popupElement = document.getElementById('popup');
     const timeSpentElement = document.getElementById('time-spent');
     const restartButton = document.getElementById('restart-button');
-    const closeButton = document.getElementById('close-button');
-    const gameContainer = document.getElementById('game-container');
+
 
     const words = {
         'A': 'Abelha',
@@ -104,8 +103,8 @@ document.addEventListener('DOMContentLoaded', () => {
         shuffledImages.forEach(letter => {
             const imageElement = document.createElement('div');
             imageElement.className = 'image';
-            const img = document.createElement('img');
-            img.src = `imagens/${words[letter].toLowerCase()}.png`;
+            const img = document.createElement('img');  
+            img.src = `../static/image/alfabeto/${words[letter].toLowerCase()}.png`;
             img.alt = words[letter];
             imageElement.appendChild(img);
             imageElement.ondragover = (event) => {
@@ -150,11 +149,6 @@ document.addEventListener('DOMContentLoaded', () => {
         errorCountElement.textContent = errorCount;
         popupElement.classList.add('hidden');
         loadRound();
-    });
-
-    closeButton.addEventListener('click', () => {
-        popupElement.classList.add('hidden');
-        gameContainer.innerHTML='<img src="../logo.jpeg"> </img>';
     });
 
     loadRound();
