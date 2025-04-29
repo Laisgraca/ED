@@ -1,8 +1,8 @@
 body {
-    font-family: 'Comic Sans MS', cursive;
-    background: url('../fundo10.jpg') no-repeat center center fixed;
+    font-family: "DynaPuff", system-ui;
+    background: url('../fundo13.jpg') no-repeat center center fixed;
     background-size: cover;
-    margin: 0;
+    margin: 10;
     padding: 0;
     display: flex;
     flex-direction: column;
@@ -10,18 +10,25 @@ body {
 }
 
 #header {
-    background: url('../fundo10.jpg') no-repeat center center fixed;
-    background-size: cover;
+    background: url('../fundo13.jpg') no-repeat 200px;
+    background: size cover;
     padding: 10px;
+    position: fixed;
     display: flex;
     justify-content: space-between;
-    align-items: center;
+    align-items:first baseline;
 }
-
+#user-info{
+    color: rgb(0, 0, 0);
+    top: 40;
+    position: relative; 
+    left: 1200;
+    font-size: 20px;
+    color:	#9932CC;
+}
 #content {
     display: flex;
-    flex-grow: 1;
-    background: url('../logo.jpeg') no-repeat center center fixed;
+    flex-grow: 5;
     justify-content: center;
 
 }
@@ -31,19 +38,19 @@ body {
     display: flex;
     justify-content: center;
     align-items: center;
-    background: url('../fundo10.jpg') no-repeat center center fixed;
+    background: url('/ED/static/fundo13.jpg') no-repeat center center fixed;
     background-size: cover;
     margin: 10px auto;
     border-radius: 20px;
-    box-shadow: 0 0 20px rgba(0,0,0,0.1);
+    box-shadow: 0 0 20px rgba(255, 83, 4, 0.966);
 }
 
 #menu {
-    width: 200px;
+    width: 250px;
     height: 80%;
 
     background-size: cover;
-    padding: 20px;
+    padding: 80px;
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -51,18 +58,19 @@ body {
 }
 
 .menu-button {
-    width: 200px;
-    height: 80px;
+    width: 260px;
+    height: 90px;
     margin: 10px 0;
     opacity: 2;
-    padding: 15px;
+    padding: 16px;
     font-size: 18px;
     border: none;
     border-radius: 10px;
-    background-color: #FF6347;
+    background-color: #a647ff;
     color: white;
     cursor: pointer;
     transition: transform 0.3s ease;
+    font-family: "DynaPuff", system-ui;
 }
 
 .menu-button:hover {
